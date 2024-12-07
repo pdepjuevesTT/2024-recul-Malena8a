@@ -50,14 +50,12 @@ cumpleRequisitosCopada(Persona):-
 cumpleRequisitosCopada(Persona):-
     propiedad(Persona,departamento(_,Banio)),
     Banio >1.
-/*
+
 %Punto3)
 barrioCaro(Barrio):-
     viveEn(_,Barrio),
-    foreach(tienenPropEn(Alguien,Barrio,Propiedad), (Goal)).
-    
-tienenPropEn(Alguien,Barrio,Propiedad):-
-*/
+    foreach(viveEn(Alguien,Barrio), tienePropiedadCopada(Alguien)).
+
 
 %Punto4)
 tasas(juan,150000).
