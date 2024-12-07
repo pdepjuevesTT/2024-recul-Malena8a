@@ -54,7 +54,7 @@ cumpleRequisitosCopada(Persona):-
 %Punto3)
 barrioCaro(Barrio):-
     viveEn(_,Barrio),
-    foreach(viveEn(Alguien,Barrio), tienePropiedadCopada(Alguien)).
+    foreach(viveEn(Alguien,Barrio), tienePropiedadBarata(Alguien)).
 
 
 %Punto4)
